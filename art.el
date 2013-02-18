@@ -1,4 +1,4 @@
-(load (expand-file-name "~/pizzbook/lisp/quicklisp/slime-helper.el"))
+(load (expand-file-name "~/pizzbook/lisp/quicklisp/slime-helper.el") t)
 ;; Replace "sbcl" with the path to your implementation
 (setq inferior-lisp-program "sbcl")
 

@@ -10,7 +10,7 @@
 
 
 ;; Add in your own as you wish:
-(defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings)
+(defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings color-theme-solarized mustache-mode)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
@@ -18,16 +18,14 @@
         (package-install p)))
 
 
-;; позволяем увеличивать размер файла перемещением курсора вниз
-(setq next-line-add-newlines t)
-
-(load (expand-file-name "~/quicklisp/slime-helper.el"))
-;; Replace "sbcl" with the path to your implementation
-(setq inferior-lisp-program "sbcl")
 
 
+(load-theme 'solarized-light t)
 
+;; вместо M-x
+(global-set-key "\C-x\C-m" 'execute-extended-command)
 
-
-
-
+;; используем C-w для удаления слова с опечаткой и последующего набора его заново
+;; https://sites.google.com/site/steveyegge2/effective-emacs/#item3
+(global-set-key "\C-w" 'backward-kill-word)
+(global-set-key "\C-x\C-k" 'kill-region)

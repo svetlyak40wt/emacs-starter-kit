@@ -10,23 +10,21 @@
 
 
 ;; Add in your own as you wish:
-(defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings color-theme-solarized mustache-mode)
+(defvar my-packages '(starter-kit
+                      starter-kit-lisp
+                      starter-kit-bindings
+                      color-theme-solarized
+                      mustache-mode
+                      python
+                      pymacs
+                      flymake-python-pyflakes
+                      flymake-cursor
+                      yasnippet)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
         (package-install p)))
-
-
-
-
-;; вместо M-x
-(global-set-key "\C-x\C-m" 'execute-extended-command)
-
-;; используем C-w для удаления слова с опечаткой и последующего набора его заново
-;; https://sites.google.com/site/steveyegge2/effective-emacs/#item3
-(global-set-key "\C-w" 'backward-kill-word)
-(global-set-key "\C-x\C-k" 'kill-region)
 
 
 (load-theme 'solarized-light t)
@@ -43,3 +41,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(show-paren-match ((t (:background "#e56545" :foreground "#00cdcd" :inverse-video nil :underline nil :slant normal :weight bold))) nil "подсвечиваем скобочки красненьким, чтобы можно было нормально Lisp код редактировать"))
+

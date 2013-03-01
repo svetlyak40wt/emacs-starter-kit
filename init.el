@@ -19,14 +19,13 @@
                       pymacs
                       flymake-python-pyflakes
                       flymake-cursor
+                      whitespace
                       yasnippet)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
         (package-install p)))
-
-
 
 
 (load-theme 'solarized-light t)

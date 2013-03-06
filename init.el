@@ -19,6 +19,7 @@
                       pymacs
                       flymake-python-pyflakes
                       flymake-cursor
+                      whitespace
                       yasnippet)
   "A list of packages to ensure are installed at launch.")
 

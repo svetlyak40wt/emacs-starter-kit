@@ -5,6 +5,9 @@
 
 ;; KEYBINDINGS
 
+;; вместо M-x
+(global-set-key (kbd "C-x C-m") 'execute-extended-command)
+
 (global-set-key (kbd "C-c C-s") 'slime-selector)
 (global-set-key (kbd "C-c C-c") 'set-mark-command)
 (global-set-key (kbd "C-x C-z") 'zap-to-char)
@@ -14,3 +17,4 @@
 (global-set-key (kbd "C-w") 'backward-kill-word)
 (global-set-key (kbd "C-x C-k") 'kill-region)
 (global-set-key (kbd "M-z") 'undo)
+

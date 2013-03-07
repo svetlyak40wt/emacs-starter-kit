@@ -9,8 +9,8 @@
 (global-set-key (kbd "C-x C-m") 'execute-extended-command)
 
 (global-set-key (kbd "C-c C-s") 'slime-selector)
-(global-set-key (kbd "C-c C-c") 'set-mark-command)
-(global-set-key (kbd "C-x C-z") 'zap-to-char)
+(global-set-key (kbd "C-c m") 'set-mark-command)
+(global-set-key (kbd "C-c z") 'zap-to-char)
 
 ;; используем C-w для удаления слова с опечаткой и последующего набора его заново
 ;; https://sites.google.com/site/steveyegge2/effective-emacs/#item3

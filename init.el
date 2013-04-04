@@ -20,6 +20,7 @@
                       flymake-python-pyflakes
                       flymake-cursor
                       whitespace
+                      expand-region
                       yasnippet)
   "A list of packages to ensure are installed at launch.")
 

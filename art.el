@@ -17,3 +17,4 @@
 (global-set-key (kbd "M-z") 'undo)
 
 (global-set-key (kbd "C-c =") 'er/expand-region)
+(global-set-key (kbd "C-c 0") 'ace-jump-mode)

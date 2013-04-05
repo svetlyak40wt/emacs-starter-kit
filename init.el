@@ -21,6 +21,7 @@
                       flymake-cursor
                       whitespace
                       expand-region
+                      ace-jump-mode
                       yasnippet)
   "A list of packages to ensure are installed at launch.")
 

@@ -13,3 +13,5 @@ starter-kit-2.*
 /auto-save-list/
 tramp
 .mc-lists.el
+el-get
+ac-comphist.dat

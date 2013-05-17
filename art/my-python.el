@@ -5,6 +5,11 @@
   
        ;; Snippets
        (yas-minor-mode)
-       (yas/load-directory "~/.emacs.d/snippets"))
+       (yas/load-directory "~/.emacs.d/snippets")
+
+       (setq jedi:setup-keys t)
+       (require 'auto-complete)
+       (auto-complete-mode)
+       (jedi:setup))
 
        (add-hook 'python-mode-hook 'python-config)))

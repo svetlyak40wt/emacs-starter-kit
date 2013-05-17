@@ -25,6 +25,9 @@
                       ace-jump-mode
                       ; пометка и редактирование нескольких регионов сразу
                       multiple-cursors
+                      ; зависимости для Jedi
+                      auto-complete
+                      fuzzy
                       yasnippet)
   "A list of packages to ensure are installed at launch.")
 
@@ -32,6 +35,22 @@
   (when (not (package-installed-p p))
         (package-install p)))
 
+
+;; el-get initialization
+;; Нужно для установки http://tkf.github.io/emacs-jedi/
+
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+
+(unless (require 'el-get nil 'noerror)
+  (with-current-buffer
+      (url-retrieve-synchronously
+       "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
+    (let (el-get-master-branch)
+      (goto-char (point-max))
+      (eval-print-last-sexp))))
+
+(el-get 'sync)
+;; end of el-get init
 
 (load-theme 'solarized-light t)
 

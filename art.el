@@ -26,12 +26,3 @@
 (define-key input-decode-map "\e[1;10B" [M-S-down])
 (define-key input-decode-map "\e[1;10C" [M-S-right])
 (define-key input-decode-map "\e[1;10D" [M-S-left])
-
-;; Multiple cursors
-;; https://github.com/magnars/multiple-cursors.el
-(require 'multiple-cursors)
-(global-set-key (kbd "C-c m e") 'mc/edit-lines)
-(global-set-key (kbd "C-c m >") 'mc/mark-next-like-this)
-(global-set-key (kbd "C-c m <") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-c m a") 'mc/mark-all-like-this)
-(global-set-key (kbd "C-c m t") 'mc/mark-sgml-tag-pair)

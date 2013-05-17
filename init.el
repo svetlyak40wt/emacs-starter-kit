@@ -21,7 +21,10 @@
                       flymake-cursor
                       whitespace
                       expand-region
+                      ; переход на заданный символ
                       ace-jump-mode
+                      ; пометка и редактирование нескольких регионов сразу
+                      multiple-cursors
                       yasnippet)
   "A list of packages to ensure are installed at launch.")
 

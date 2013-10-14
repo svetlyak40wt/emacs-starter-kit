@@ -17,6 +17,7 @@
 (global-set-key (kbd "C-w") 'backward-kill-word)
 (global-set-key (kbd "C-x C-k") 'kill-region)
 (global-set-key (kbd "M-z") 'undo)
+(global-set-key (kbd "M-m") 'iy-go-to-char)
 
 (global-set-key (kbd "C-c =") 'er/expand-region)
 (global-set-key (kbd "C-c 0") 'ace-jump-mode)

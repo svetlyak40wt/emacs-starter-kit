@@ -24,6 +24,7 @@
                       ace-jump-mode
                       auto-complete ;; for jedi
                       fuzzy ;; for jedi
+                      iy-go-to-char ;; move to the next occurence of the char
                       yasnippet)
   "A list of packages to ensure are installed at launch.")
 

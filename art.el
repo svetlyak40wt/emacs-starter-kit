@@ -1,6 +1,6 @@
-(load (expand-file-name "~/pizzbook/lisp/quicklisp/slime-helper.el") t)
+;(load (expand-file-name "~/pizzbook/lisp/quicklisp/slime-helper.el") t)
 ;; Replace "sbcl" with the path to your implementation
-(setq inferior-lisp-program "sbcl")
+;(setq inferior-lisp-program "sbcl")
 
 
 ;; KEYBINDINGS
@@ -21,6 +21,7 @@
 (global-set-key (kbd "M-m") 'iy-go-to-char)
 
 (global-set-key (kbd "C-c =") 'er/expand-region)
+(global-set-key (kbd "C-c c") 'comment-or-uncomment-region)
 (global-set-key (kbd "C-c 0") 'ace-jump-mode)
 
 ;; iTerm meta-shift-<arrows> fix
@@ -29,3 +30,7 @@
 (define-key input-decode-map "\e[1;10B" [M-S-down])
 (define-key input-decode-map "\e[1;10C" [M-S-right])
 (define-key input-decode-map "\e[1;10D" [M-S-left])
+(global-set-key (kbd "C-c C-\\") 'goto-last-change)
+
+(if (file-exists-p ".emacs.el")
+    (load-file ".emacs.el"))

@@ -30,6 +30,7 @@
                       fuzzy
                       iy-go-to-char ;; move to the next occurence of the char
                       py-import-check ;; pip install importchecker, запускать как py-import-check
+                      goto-last-change
                       yasnippet)
   "A list of packages to ensure are installed at launch.")
 
@@ -53,6 +54,10 @@
 
 (el-get 'sync)
 ;; end of el-get init
+
+(setq browse-url-generic-program "ssh"
+      browse-url-generic-args '("back" "open")
+      browse-url-browser-function 'browse-url-generic)
 
 (load-theme 'solarized-light t)
 

@@ -21,9 +21,13 @@
                       flymake-cursor
                       whitespace
                       expand-region
+                      ; переход на заданный символ
                       ace-jump-mode
-                      auto-complete ;; for jedi
-                      fuzzy ;; for jedi
+                      ; пометка и редактирование нескольких регионов сразу
+                      multiple-cursors
+                      ; зависимости для Jedi
+                      auto-complete
+                      fuzzy
                       iy-go-to-char ;; move to the next occurence of the char
                       py-import-check ;; pip install importchecker, запускать как py-import-check
                       yasnippet)
@@ -52,15 +56,5 @@
 
 (load-theme 'solarized-light t)
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(fill-column 1000))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(show-paren-match ((t (:background "#e56545" :foreground "#00cdcd" :inverse-video nil :underline nil :slant normal :weight bold))) nil "подсвечиваем скобочки красненьким, чтобы можно было нормально Lisp код редактировать"))
+(setq custom-file "~/.emacs.d/customizations.el")
+(load custom-file)

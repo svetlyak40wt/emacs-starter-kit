@@ -4,6 +4,7 @@
 
 
 ;; KEYBINDINGS
+;; Mastering Key Bindings: http://www.masteringemacs.org/articles/2011/02/08/mastering-key-bindings-emacs/
 
 ;; вместо M-x
 (global-set-key (kbd "C-x C-m") 'execute-extended-command)
@@ -21,3 +22,10 @@
 
 (global-set-key (kbd "C-c =") 'er/expand-region)
 (global-set-key (kbd "C-c 0") 'ace-jump-mode)
+
+;; iTerm meta-shift-<arrows> fix
+;; from https://github.com/troydm/emacs-stuff/blob/master/windcycle.el
+(define-key input-decode-map "\e[1;10A" [M-S-up])
+(define-key input-decode-map "\e[1;10B" [M-S-down])
+(define-key input-decode-map "\e[1;10C" [M-S-right])
+(define-key input-decode-map "\e[1;10D" [M-S-left])

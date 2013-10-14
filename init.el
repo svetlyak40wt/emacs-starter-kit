@@ -25,6 +25,7 @@
                       auto-complete ;; for jedi
                       fuzzy ;; for jedi
                       iy-go-to-char ;; move to the next occurence of the char
+                      py-import-check ;; pip install importchecker, запускать как py-import-check
                       yasnippet)
   "A list of packages to ensure are installed at launch.")
 

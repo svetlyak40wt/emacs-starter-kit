@@ -7,6 +7,7 @@
        (setq org-feed-alist
              '(("Input from evernote"
                 "https://zapier.com/engine/rss/88023/40wt-inbox/"
-                "~/Yandex.Disk.localized/txt/todo.org" "INBOX"))))
+                "~/Yandex.Disk.localized/txt/todo.org" "INBOX")))
+       (setq org-export-backends '(html md)))
      
      (add-hook 'org-mode-hook 'org-mode-config)))

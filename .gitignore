@@ -15,3 +15,5 @@ tramp
 .mc-lists.el
 el-get
 ac-comphist.dat
+.org-id-locations
+bookmarks

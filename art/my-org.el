@@ -1,8 +1,9 @@
 (eval-after-load 'org
   `(progn
      (defun org-mode-config ()
-       (local-set-key (kbd "C-c a l") 'org-agenda-list)
-       (local-set-key (kbd "C-c a t") 'org-timeline)
+       (define-key org-mode-map (kbd "C-c a l") 'org-agenda-list)
+       (define-key org-mode-map (kbd "C-c a t") 'org-timeline)
+       (define-key org-mode-map (kbd "C-x C-k") 'org-cut-subtree)
 
        (setq org-feed-alist
              '(("Input from evernote"

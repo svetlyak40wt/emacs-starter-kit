@@ -10,6 +10,7 @@
        (setq jedi:setup-keys t)
        (require 'auto-complete)
        (auto-complete-mode)
+       (highlight-lines-matching-regexp "pdb\.set_trace" "hi-blue")
        (jedi:setup))
 
        (add-hook 'python-mode-hook 'python-config)))

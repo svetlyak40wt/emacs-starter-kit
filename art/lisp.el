@@ -1,6 +1,6 @@
 (add-hook 'lisp-mode-hook (lambda ()
                             (define-key slime-mode-map (kbd "C-c x") 'execute-extended-command)
-                            (define-key slime-mode-map (kbd "C-c C-c") 'set-mark-command)
+                            (define-key slime-repl-mode-map (kbd "C-c i") 'slime-inspect)
                             
                             
                             (define-key paredit-mode-map (kbd "C-c [") 'paredit-forward-barf-sexp)
